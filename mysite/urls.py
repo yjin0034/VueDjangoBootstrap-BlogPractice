@@ -16,6 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from mysite.views import HomeView
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # shkim
+    # 홈 페이지 URL 매핑
+    # HomeView.as_view() : 클래스형 뷰 형식
+    # / 로 시작하는 페이지를 요청하면, (views의) HomeView 함수를 호출
+    # name='home' : 해당 URL에 대해 URL 별칭 설정
+    path('', HomeView.as_view(), name='home'),
 ]
