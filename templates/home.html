@@ -57,11 +57,11 @@
                         </li>
                         {# 블로그 메뉴 #}
                         <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Blog</a>
+                            <a class="nav-link" href="#blog">Blog</a>
                         </li>
                         {# 자기소개 메뉴 #}
                         <li class="nav-item">
-                            <a class="nav-link" href="#team">Iam</a>
+                            <a class="nav-link" href="#iam">Iam</a>
                         </li>
                         {# 관리자 메뉴 #}
                         <li class="nav-item">
@@ -71,7 +71,7 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
+        <!-- Masthead-->  {# 홈 메뉴 #}
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">Welcome To My Blog!</div>
@@ -80,41 +80,41 @@
                 </div>
             </div>
         </header>
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
+        <!-- Blog Grid-->  {# 블로그 메뉴 #}
+        <section class="page-section bg-light" id="blog">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
+                    <h2 class="section-heading text-uppercase">Blog list</h2>
                     <h3 class="section-subheading text-muted">
-                        Lorem ipsum dolor sit amet consectetur.
+                        블로그 리스트입니다.
                     </h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
+                        <!-- Blog item 1-->
+                        <div class="blog-item">
                             <a
-                                class="portfolio-link"
+                                class="blog-link"
                                 data-bs-toggle="modal"
-                                href="#portfolioModal1"
+                                href="#blogModal1"
                             >
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
+                                <div class="blog-hover">
+                                    <div class="blog-hover-content">
                                         <i class="fas fa-plus fa-3x"></i>
                                     </div>
                                 </div>
                                 <img
                                     class="img-fluid"
-                                    src="{% static 'assets/img/portfolio/1.jpg' %}"
+                                    src="{% static 'assets/img/blog/1.jpg' %}"
                                     alt="..."
                                 />
                             </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">
+                            <div class="blog-caption">
+                                <div class="blog-caption-heading">
                                     Threads
                                 </div>
                                 <div
-                                    class="portfolio-caption-subheading text-muted"
+                                    class="blog-caption-subheading text-muted"
                                 >
                                     Illustration
                                 </div>
@@ -122,30 +122,30 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
+                        <!-- Blog item 2-->
+                        <div class="blog-item">
                             <a
-                                class="portfolio-link"
+                                class="blog-link"
                                 data-bs-toggle="modal"
-                                href="#portfolioModal2"
+                                href="#blogModal2"
                             >
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
+                                <div class="blog-hover">
+                                    <div class="blog-hover-content">
                                         <i class="fas fa-plus fa-3x"></i>
                                     </div>
                                 </div>
                                 <img
                                     class="img-fluid"
-                                    src="{% static 'assets/img/portfolio/2.jpg' %}"
+                                    src="{% static 'assets/img/blog/2.jpg' %}"
                                     alt="..."
                                 />
                             </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">
+                            <div class="blog-caption">
+                                <div class="blog-caption-heading">
                                     Explore
                                 </div>
                                 <div
-                                    class="portfolio-caption-subheading text-muted"
+                                    class="blog-caption-subheading text-muted"
                                 >
                                     Graphic Design
                                 </div>
@@ -153,125 +153,32 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
+                        <!-- Blog item 3-->
+                        <div class="blog-item">
                             <a
-                                class="portfolio-link"
+                                class="blog-link"
                                 data-bs-toggle="modal"
-                                href="#portfolioModal3"
+                                href="#blogModal3"
                             >
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
+                                <div class="blog-hover">
+                                    <div class="blog-hover-content">
                                         <i class="fas fa-plus fa-3x"></i>
                                     </div>
                                 </div>
                                 <img
                                     class="img-fluid"
-                                    src="{% static 'assets/img/portfolio/3.jpg' %}"
+                                    src="{% static 'assets/img/blog/3.jpg' %}"
                                     alt="..."
                                 />
                             </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">
+                            <div class="blog-caption">
+                                <div class="blog-caption-heading">
                                     Finish
                                 </div>
                                 <div
-                                    class="portfolio-caption-subheading text-muted"
+                                    class="blog-caption-subheading text-muted"
                                 >
                                     Identity
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a
-                                class="portfolio-link"
-                                data-bs-toggle="modal"
-                                href="#portfolioModal4"
-                            >
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img
-                                    class="img-fluid"
-                                    src="{% static 'assets/img/portfolio/4.jpg' %}"
-                                    alt="..."
-                                />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">
-                                    Lines
-                                </div>
-                                <div
-                                    class="portfolio-caption-subheading text-muted"
-                                >
-                                    Branding
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                            <a
-                                class="portfolio-link"
-                                data-bs-toggle="modal"
-                                href="#portfolioModal5"
-                            >
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img
-                                    class="img-fluid"
-                                    src="{% static 'assets/img/portfolio/5.jpg' %}"
-                                    alt="..."
-                                />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">
-                                    Southwest
-                                </div>
-                                <div
-                                    class="portfolio-caption-subheading text-muted"
-                                >
-                                    Website Design
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
-                            <a
-                                class="portfolio-link"
-                                data-bs-toggle="modal"
-                                href="#portfolioModal6"
-                            >
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img
-                                    class="img-fluid"
-                                    src="{% static 'assets/img/portfolio/6.jpg' %}"
-                                    alt="..."
-                                />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">
-                                    Window
-                                </div>
-                                <div
-                                    class="portfolio-caption-subheading text-muted"
-                                >
-                                    Photography
                                 </div>
                             </div>
                         </div>
@@ -279,27 +186,28 @@
                 </div>
             </div>
         </section>
-        <!-- Team-->
-        <section class="page-section bg-light" id="team">
+        <!-- Iam-->  {# 자기소개 메뉴 #}
+        <section class="page-section bg-light" id="iam">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">
-                        Our Amazing Team
+                        Youngjin Jung
                     </h2>
                     <h3 class="section-subheading text-muted">
-                        Lorem ipsum dolor sit amet consectetur.
+                        안녕하세요 정영진입니다.
                     </h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
-                        <div class="team-member">
+                        <div class="iam-member mb-5">
                             <img
                                 class="mx-auto rounded-circle"
-                                src="{% static 'assets/img/team/1.jpg' %}"
+                                src="{% static 'assets/img/iam/Mancity_Simpson.jpg' %}"
                                 alt="..."
+                                width="250" height="250"
                             />
-                            <h4>Parveen Anand</h4>
-                            <p class="text-muted">Lead Designer</p>
+                            <h4>Mancity Company</h4>
+                            <p class="text-muted">Python Web Programmer</p>
                             <a
                                 class="btn btn-dark btn-social mx-2"
                                 href="#!"
@@ -320,72 +228,28 @@
                             ></a>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img
-                                class="mx-auto rounded-circle"
-                                src="{% static 'assets/img/team/2.jpg' %}"
-                                alt="..."
-                            />
-                            <h4>Diana Petersen</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a
-                                class="btn btn-dark btn-social mx-2"
-                                href="#!"
-                                aria-label="Diana Petersen Twitter Profile"
-                                ><i class="fab fa-twitter"></i
-                            ></a>
-                            <a
-                                class="btn btn-dark btn-social mx-2"
-                                href="#!"
-                                aria-label="Diana Petersen Facebook Profile"
-                                ><i class="fab fa-facebook-f"></i
-                            ></a>
-                            <a
-                                class="btn btn-dark btn-social mx-2"
-                                href="#!"
-                                aria-label="Diana Petersen LinkedIn Profile"
-                                ><i class="fab fa-linkedin-in"></i
-                            ></a>
+                    <div class="col-lg-8"></div>
+                        <div class="mb-5">
+                            <h4>정보보호학과 전공</h4>
+                            <p class="text-muted">
+                                Do dolore duis id voluptate reprehenderit dolore do deserunt. Velit est dolor reprehenderit sit esse
+                                irure velit voluptate esse enim. Reprehenderit qui sit cillum voluptate labore deserunt excepteur nulla dolor.
+                            </p>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img
-                                class="mx-auto rounded-circle"
-                                src="{% static 'assets/img/team/3.jpg' %}"
-                                alt="..."
-                            />
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a
-                                class="btn btn-dark btn-social mx-2"
-                                href="#!"
-                                aria-label="Larry Parker Twitter Profile"
-                                ><i class="fab fa-twitter"></i
-                            ></a>
-                            <a
-                                class="btn btn-dark btn-social mx-2"
-                                href="#!"
-                                aria-label="Larry Parker Facebook Profile"
-                                ><i class="fab fa-facebook-f"></i
-                            ></a>
-                            <a
-                                class="btn btn-dark btn-social mx-2"
-                                href="#!"
-                                aria-label="Larry Parker LinkedIn Profile"
-                                ><i class="fab fa-linkedin-in"></i
-                            ></a>
+                        <div class="mb-5">
+                            <h4>파이썬 장고 주니어 개발자</h4>
+                            <p class="text-muted">
+                                Do dolore duis id voluptate reprehenderit dolore do deserunt. Velit est dolor reprehenderit sit esse
+                                irure velit voluptate esse enim. Reprehenderit qui sit cillum voluptate labore deserunt excepteur nulla dolor.
+                            </p>  
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center">
-                        <p class="large text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Aut eaque, laboriosam veritatis, quos non quis
-                            ad perspiciatis, totam corporis ea, alias ut unde.
-                        </p>
+                        <div class="mb-5">
+                            <h4>주니어 데이터엔지니어</h4>
+                            <p class="text-muted">
+                                Do dolore duis id voluptate reprehenderit dolore do deserunt. Velit est dolor reprehenderit sit esse
+                                irure velit voluptate esse enim. Reprehenderit qui sit cillum voluptate labore deserunt excepteur nulla dolor.
+                            </p>  
+                        </div>
                     </div>
                 </div>
             </div>
@@ -447,7 +311,7 @@
                                     </p>
                                     <img
                                         class="img-fluid d-block mx-auto"
-                                        src="{% static 'assets/img/portfolio/6.jpg' %}"
+                                        src="{% static 'assets/img/blog/6.jpg' %}"
                                         alt="..."
                                     />
                                     <p>
