@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'blog.apps.BlogConfig',  # blog 앱 추가  # .BlogConfig : blog 앱 설정 클래스
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
