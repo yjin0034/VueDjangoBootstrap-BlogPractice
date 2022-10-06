@@ -1,4 +1,4 @@
-# blog 앱에서 필요한 테이블들을 정의
+# blog 앱에서 필요한 모델(테이블)들을 정의
 
 from django.db import models
 

@@ -135,8 +135,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = (BASE_DIR / 'static',)
 # STATIC_ROOT =
 
-# 사진 업로드 기능 관련
+# 미디어 파일 업로드 기능 관련
+# MEDIA_URL : 각 media 파일에 대한 URL Prefix(접두사) 설정. 웹브라우저에서 URL을 통해 저장된 미디어 파일에 접근할 때, 어떤 경로에서 해당 file을 탐색할지 지정해주는 것
 MEDIA_URL = '/media/'
+# MEDIA_ROOT : 실제로 파일이 저장되는 Root 경로를 설정
 MEDIA_ROOT = BASE_DIR / 'media'
 
 # 인증 기능 관련

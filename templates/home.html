@@ -95,8 +95,8 @@
                         <div class="blog-item">
                             <a
                                 class="blog-link"
-                                data-bs-toggle="modal"
-                                href="#blogModal1"
+                                {# Blog list에서 블로그 하나를 클릭하면 Post 상세페이지(post_detail)를 불러오도록 연결 #}
+                                href="{% url 'blog:post_detail' 1 %}"
                             >
                                 <div class="blog-hover">
                                     <div class="blog-hover-content">
