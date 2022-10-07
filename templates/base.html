@@ -59,16 +59,17 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         {# 홈 메뉴 #}
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'home' %}#page-top">Home</a>  {# page-top : 홈 메뉴 클릭 시, 페이지 상위 부분으로 이동 #}
+                        <li class="nav-item">  
+                            {# bootstrap ScrollSpy 기능이 적용되도록 하기 위해 data-bs-target 속성을 추가해 적용해줌. href 기능도 가능하지만, 우리가 Fragment뿐만 아니라 url도 같이 지정해준 상태여서 scrollspy가 적용되지 않았음. #}
+                            <a class="nav-link" data-bs-target="#page-top" href="{% url 'home' %}#page-top">Home</a>  {# page-top : 홈 메뉴 클릭 시, 페이지 상위 부분으로 이동 #}
                         </li>
                         {# 블로그 메뉴 #}
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'home' %}#blog">Blog</a>
+                            <a class="nav-link" data-bs-target="#blog" href="{% url 'home' %}#blog">Blog</a>
                         </li>
                         {# 자기소개 메뉴 #}
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'home' %}#iam">Iam</a>
+                            <a class="nav-link" data-bs-target="#iam" href="{% url 'home' %}#iam">Iam</a>
                         </li>
                         {# 관리자 메뉴 #}
                         <li class="nav-item">
