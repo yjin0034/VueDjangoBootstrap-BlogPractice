@@ -60,15 +60,15 @@
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         {# 홈 메뉴 #}
                         <li class="nav-item">
-                            <a class="nav-link" href="#page-top">Home</a>  {# 홈 메뉴 클릭 시, 페이지 상위 부분으로 이동 #}
+                            <a class="nav-link" href="{% url 'home' %}#page-top">Home</a>  {# page-top : 홈 메뉴 클릭 시, 페이지 상위 부분으로 이동 #}
                         </li>
                         {# 블로그 메뉴 #}
                         <li class="nav-item">
-                            <a class="nav-link" href="#blog">Blog</a>
+                            <a class="nav-link" href="{% url 'home' %}#blog">Blog</a>
                         </li>
                         {# 자기소개 메뉴 #}
                         <li class="nav-item">
-                            <a class="nav-link" href="#iam">Iam</a>
+                            <a class="nav-link" href="{% url 'home' %}#iam">Iam</a>
                         </li>
                         {# 관리자 메뉴 #}
                         <li class="nav-item">
