@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'blog.apps.BlogConfig',  # blog 앱 추가  # .BlogConfig : blog 앱 설정 클래스
     'django.contrib.admin',
-    'django.contrib.auth',
+    'django.contrib.auth',  # 장고의 로그인, 로그아웃 기능 관련
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
