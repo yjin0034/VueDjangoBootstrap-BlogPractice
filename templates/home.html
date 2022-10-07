@@ -6,219 +6,219 @@
 {% block title %}home.html{% endblock %}  {# base.html 제목 오버라이딩 #}
 
 {% block content %}  {# base.html 본문 오버라이딩 #}
-    <!-- Blog Grid-->  {# 블로그 메뉴 #}
-    <section class="page-section bg-light" id="blog">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Blog list</h2>
-                <h3 class="section-subheading text-muted">
-                    블로그 리스트입니다.
-                </h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Blog item 1-->
-                    <div class="blog-item">
-                        <a
-                            class="blog-link"
-                            {# Blog list에서 블로그 하나를 클릭하면 Post 상세페이지(post_detail)를 불러오도록 연결 #}
-                            href="{% url 'blog:post_detail' 1 %}"
-                        >
-                            <div class="blog-hover">
-                                <div class="blog-hover-content">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img
-                                class="img-fluid"
-                                src="{% static 'assets/img/blog/1.jpg' %}"
-                                alt="..."
-                            />
-                        </a>
-                        <div class="blog-caption">
-                            <div class="blog-caption-heading">
-                                Threads
-                            </div>
-                            <div
-                                class="blog-caption-subheading text-muted"
-                            >
-                                Illustration
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Blog item 2-->
-                    <div class="blog-item">
-                        <a
-                            class="blog-link"
-                            data-bs-toggle="modal"
-                            href="#blogModal2"
-                        >
-                            <div class="blog-hover">
-                                <div class="blog-hover-content">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img
-                                class="img-fluid"
-                                src="{% static 'assets/img/blog/2.jpg' %}"
-                                alt="..."
-                            />
-                        </a>
-                        <div class="blog-caption">
-                            <div class="blog-caption-heading">
-                                Explore
-                            </div>
-                            <div
-                                class="blog-caption-subheading text-muted"
-                            >
-                                Graphic Design
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Blog item 3-->
-                    <div class="blog-item">
-                        <a
-                            class="blog-link"
-                            data-bs-toggle="modal"
-                            href="#blogModal3"
-                        >
-                            <div class="blog-hover">
-                                <div class="blog-hover-content">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img
-                                class="img-fluid"
-                                src="{% static 'assets/img/blog/3.jpg' %}"
-                                alt="..."
-                            />
-                        </a>
-                        <div class="blog-caption">
-                            <div class="blog-caption-heading">
-                                Finish
-                            </div>
-                            <div
-                                class="blog-caption-subheading text-muted"
-                            >
-                                Identity
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- Blog Grid-->  {# 블로그 메뉴 #}
+<section class="page-section bg-light" id="blog">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Blog list</h2>
+            <h3 class="section-subheading text-muted">
+                블로그 리스트입니다.
+            </h3>
         </div>
-    </section>
-    <!-- Iam-->  {# 자기소개 메뉴 #}
-    <section class="page-section bg-light" id="iam">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">
-                    Youngjin Jung
-                </h2>
-                <h3 class="section-subheading text-muted">
-                    안녕하세요 정영진입니다.
-                </h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="iam-member mb-5">
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <!-- Blog item 1-->
+                <div class="blog-item">
+                    <a
+                        class="blog-link"
+                        {# Blog list에서 블로그 하나를 클릭하면 Post 상세페이지(post_detail)를 불러오도록 연결 #}
+                        href="{% url 'blog:post_detail' 1 %}"
+                    >
+                        <div class="blog-hover">
+                            <div class="blog-hover-content">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
                         <img
-                            class="mx-auto rounded-circle"
-                            src="{% static 'assets/img/iam/Mancity_Simpson.jpg' %}"
+                            class="img-fluid"
+                            src="{% static 'assets/img/blog/1.jpg' %}"
                             alt="..."
-                            width="250" height="250"
                         />
-                        <h4>Mancity Company</h4>
-                        <p class="text-muted">Python Web Programmer</p>
-                        <a
-                            class="btn btn-dark btn-social mx-2"
-                            href="#!"
-                            aria-label="Parveen Anand Twitter Profile"
-                            ><i class="fab fa-twitter"></i
-                        ></a>
-                        <a
-                            class="btn btn-dark btn-social mx-2"
-                            href="#!"
-                            aria-label="Parveen Anand Facebook Profile"
-                            ><i class="fab fa-facebook-f"></i
-                        ></a>
-                        <a
-                            class="btn btn-dark btn-social mx-2"
-                            href="#!"
-                            aria-label="Parveen Anand LinkedIn Profile"
-                            ><i class="fab fa-linkedin-in"></i
-                        ></a>
+                    </a>
+                    <div class="blog-caption">
+                        <div class="blog-caption-heading">
+                            Threads
+                        </div>
+                        <div
+                            class="blog-caption-subheading text-muted"
+                        >
+                            Illustration
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-8"></div>
-                    <div class="mb-5">
-                        <h4>정보보호학과 전공</h4>
-                        <p class="text-muted">
-                            Do dolore duis id voluptate reprehenderit dolore do deserunt. Velit est dolor reprehenderit sit esse
-                            irure velit voluptate esse enim. Reprehenderit qui sit cillum voluptate labore deserunt excepteur nulla dolor.
-                        </p>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <!-- Blog item 2-->
+                <div class="blog-item">
+                    <a
+                        class="blog-link"
+                        data-bs-toggle="modal"
+                        href="#blogModal2"
+                    >
+                        <div class="blog-hover">
+                            <div class="blog-hover-content">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img
+                            class="img-fluid"
+                            src="{% static 'assets/img/blog/2.jpg' %}"
+                            alt="..."
+                        />
+                    </a>
+                    <div class="blog-caption">
+                        <div class="blog-caption-heading">
+                            Explore
+                        </div>
+                        <div
+                            class="blog-caption-subheading text-muted"
+                        >
+                            Graphic Design
+                        </div>
                     </div>
-                    <div class="mb-5">
-                        <h4>파이썬 장고 주니어 개발자</h4>
-                        <p class="text-muted">
-                            Do dolore duis id voluptate reprehenderit dolore do deserunt. Velit est dolor reprehenderit sit esse
-                            irure velit voluptate esse enim. Reprehenderit qui sit cillum voluptate labore deserunt excepteur nulla dolor.
-                        </p>  
-                    </div>
-                    <div class="mb-5">
-                        <h4>주니어 데이터엔지니어</h4>
-                        <p class="text-muted">
-                            Do dolore duis id voluptate reprehenderit dolore do deserunt. Velit est dolor reprehenderit sit esse
-                            irure velit voluptate esse enim. Reprehenderit qui sit cillum voluptate labore deserunt excepteur nulla dolor.
-                        </p>  
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <!-- Blog item 3-->
+                <div class="blog-item">
+                    <a
+                        class="blog-link"
+                        data-bs-toggle="modal"
+                        href="#blogModal3"
+                    >
+                        <div class="blog-hover">
+                            <div class="blog-hover-content">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img
+                            class="img-fluid"
+                            src="{% static 'assets/img/blog/3.jpg' %}"
+                            alt="..."
+                        />
+                    </a>
+                    <div class="blog-caption">
+                        <div class="blog-caption-heading">
+                            Finish
+                        </div>
+                        <div
+                            class="blog-caption-subheading text-muted"
+                        >
+                            Identity
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-{% endblock %}
-
-{% block footer %}  {# base.html Footer 오버라이딩 #}
-    <!-- Footer-->
-    <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">
-                    Copyright &copy; Your Website 2022
-                </div>
-                <div class="col-lg-4 my-3 my-lg-0">
+    </div>
+</section>
+<!-- Iam-->  {# 자기소개 메뉴 #}
+<section class="page-section bg-light" id="iam">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">
+                Youngjin Jung
+            </h2>
+            <h3 class="section-subheading text-muted">
+                안녕하세요 정영진입니다.
+            </h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="iam-member mb-5">
+                    <img
+                        class="mx-auto rounded-circle"
+                        src="{% static 'assets/img/iam/Mancity_Simpson.jpg' %}"
+                        alt="..."
+                        width="250" height="250"
+                    />
+                    <h4>Mancity Company</h4>
+                    <p class="text-muted">Python Web Programmer</p>
                     <a
                         class="btn btn-dark btn-social mx-2"
                         href="#!"
-                        aria-label="Twitter"
+                        aria-label="Parveen Anand Twitter Profile"
                         ><i class="fab fa-twitter"></i
                     ></a>
                     <a
                         class="btn btn-dark btn-social mx-2"
                         href="#!"
-                        aria-label="Facebook"
+                        aria-label="Parveen Anand Facebook Profile"
                         ><i class="fab fa-facebook-f"></i
                     ></a>
                     <a
                         class="btn btn-dark btn-social mx-2"
                         href="#!"
-                        aria-label="LinkedIn"
+                        aria-label="Parveen Anand LinkedIn Profile"
                         ><i class="fab fa-linkedin-in"></i
                     ></a>
                 </div>
-                <div class="col-lg-4 text-lg-end">
-                    <a class="link-dark text-decoration-none me-3" href="#!"
-                        >Privacy Policy</a
-                    >
-                    <a class="link-dark text-decoration-none" href="#!"
-                        >Terms of Use</a
-                    >
+            </div>
+            <div class="col-lg-8"></div>
+                <div class="mb-5">
+                    <h4>정보보호학과 전공</h4>
+                    <p class="text-muted">
+                        Do dolore duis id voluptate reprehenderit dolore do deserunt. Velit est dolor reprehenderit sit esse
+                        irure velit voluptate esse enim. Reprehenderit qui sit cillum voluptate labore deserunt excepteur nulla dolor.
+                    </p>
+                </div>
+                <div class="mb-5">
+                    <h4>파이썬 장고 주니어 개발자</h4>
+                    <p class="text-muted">
+                        Do dolore duis id voluptate reprehenderit dolore do deserunt. Velit est dolor reprehenderit sit esse
+                        irure velit voluptate esse enim. Reprehenderit qui sit cillum voluptate labore deserunt excepteur nulla dolor.
+                    </p>  
+                </div>
+                <div class="mb-5">
+                    <h4>주니어 데이터엔지니어</h4>
+                    <p class="text-muted">
+                        Do dolore duis id voluptate reprehenderit dolore do deserunt. Velit est dolor reprehenderit sit esse
+                        irure velit voluptate esse enim. Reprehenderit qui sit cillum voluptate labore deserunt excepteur nulla dolor.
+                    </p>  
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
+{% endblock %}
+
+{% block footer %}  {# base.html Footer 오버라이딩 #}
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-start">
+                Copyright &copy; Your Website 2022
+            </div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a
+                    class="btn btn-dark btn-social mx-2"
+                    href="#!"
+                    aria-label="Twitter"
+                    ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                    class="btn btn-dark btn-social mx-2"
+                    href="#!"
+                    aria-label="Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                    class="btn btn-dark btn-social mx-2"
+                    href="#!"
+                    aria-label="LinkedIn"
+                    ><i class="fab fa-linkedin-in"></i
+                ></a>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a class="link-dark text-decoration-none me-3" href="#!"
+                    >Privacy Policy</a
+                >
+                <a class="link-dark text-decoration-none" href="#!"
+                    >Terms of Use</a
+                >
+            </div>
+        </div>
+    </div>
+</footer>
 {% endblock %}
